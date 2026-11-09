@@ -57,7 +57,7 @@ cp .env.example .env   # optional, only if the API is not on http://localhost:30
 
 | Client (`client/.env`) | Description                                        |
 | ---------------------- | -------------------------------------------------- |
-| `CLIENT_API_URL`       | API base URL (default `http://localhost:3001/api`) |
+| `REACT_APP_API_URL`    | API base URL (default `http://localhost:3001/api`) |
 
 ## Running
 
