@@ -1,0 +1,60 @@
+.react-datepicker__month-text {
+  color: var(--chakra-colors-gray-800) !important;
+  padding: 6px !important;
+}
+
+.react-datepicker__day:hover,
+.react-datepicker__month-text:hover {
+  background-color: var(--chakra-colors-gray-400) !important;
+  color: var(--chakra-colors-white) !important;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--in-range,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__month-text--selected {
+  background-color: var(--chakra-colors-gray-600) !important;
+  color: var(--chakra-colors-white) !important;
+}
+
+.react-datepicker__day--selected:hover,
+.react-datepicker__day--in-range:hover {
+  background-color: var(--chakra-colors-gray-700) !important;
+  color: var(--chakra-colors-white) !important;
+}
+
+.react-datepicker__day--keyboard-selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__month-text--keyboard-selected {
+  background-color: var(--chakra-colors-gray-500) !important;
+  color: var(--chakra-colors-white) !important;
+}
+
+.react-datepicker__day--range-start,
+.react-datepicker__day--range-end {
+  background-color: var(--chakra-colors-gray-800) !important;
+  color: var(--chakra-colors-white) !important;
+}
+
+.react-datepicker__day--range-start:hover,
+.react-datepicker__day--range-end:hover {
+  background-color: var(--chakra-colors-gray-600) !important;
+  color: var(--chakra-colors-white) !important;
+}
+
+.react-datepicker__day--today,
+.react-datepicker__month-text--today {
+  font-weight: bold;
+  background-color: var(--chakra-colors-gray-400) !important;
+  color: var(--chakra-colors-white) !important;
+}
+
+.react-datepicker-wrapper {
+  button::after {
+    background-color: var(--chakra-colors-color-palette-solid) !important;
+  }
+  input {
+    min-width: 212px !important;
+    max-width: 220px !important;
+  }
+}
