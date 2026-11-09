@@ -1,5 +1,5 @@
 export const API = {
-  BASE_URL: process.env.CLIENT_API_URL || 'http://localhost:3001/api',
+  BASE_URL: process.env.REACT_APP_API_URL || 'http://localhost:3001/api',
 
   FUEL_TANKS: '/fuel-tanks',
   FUEL_TANKS_WITH_CONNECTED: '/fuel-tanks/with-connected',
@@ -15,5 +15,5 @@ export const API = {
 
   LIMITS: '/car-limits',
 
-  CARDS: '/cards',
+  CARDS: '/cards'
 };

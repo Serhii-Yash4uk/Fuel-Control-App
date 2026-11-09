@@ -1,0 +1,44 @@
+services:
+  # Бекенд (Express REST API)
+  - type: web
+    name: app-server
+    env: node
+    region: frankfurt
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: JWT_SECRET
+        sync: false # Будеш заповнювати в дашборді Render
+      - key: JWT_EXPIRES_IN
+        value: 90d
+      - key: DATABASE_HOST
+        sync: false
+      - key: DATABASE_PORT
+        value: 4000
+      - key: DATABASE_USER
+        sync: false
+      - key: DATABASE_PASSWORD
+        sync: false
+      - key: DATABASE_NAME
+        sync: false
+      - key: DATABASE_SSL
+        value: 'true'
+      - key: CORS_ORIGINS
+        sync: false # Сюди впишеш URL твого фронтенду після деплою
+
+  # Фронтенд (React 18 SPA на CRA)
+  - type: static
+    name: app-client
+    rootDir: client
+    buildCommand: npm install && npm run build
+    staticPublishPath: build
+    envVars:
+      - key: REACT_APP_API_URL
+        sync: false # Сюди впишеш URL твого живого бекенду
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
