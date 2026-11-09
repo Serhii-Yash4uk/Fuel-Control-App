@@ -1,4 +1,4 @@
-# Облік пального (DieselFlow)
+# Облік пального (FuelControl)
 
 Web application for tracking diesel fuel: fuel tanks (barrels), fuel receipts, fuelings, diesel sales, per-car monthly limits and an accounting report.
 
@@ -17,7 +17,7 @@ Web application for tracking diesel fuel: fuel tanks (barrels), fuel receipts, f
 ## Tech stack
 
 - **Client:** React 18, Create React App, Redux Toolkit, React Router 7, Chakra UI 3, axios, react-datepicker, react-to-print
-- **Server:** Node.js (ESM), Express 5, mysql2, JSON Web Tokens, bcryptjs
+- **Server:** Node.js (ESM), Express, mysql2, JSON Web Tokens, bcryptjs
 - **Database:** MySQL-compatible (TiDB Cloud), connected over TLS
 
 ## Project structure
@@ -83,7 +83,7 @@ npm run build            # production build into client/build
 
 Use the following credentials to log in and test the application:
 
-| Role       | Username     | Password         |
-|------------|--------------|------------------|
-| Fueler     | `fueler`     | `fueler123`      |
-| Accountant | `accountant` | `accountant123`  |
+| Role       | Username     | Password        |
+| ---------- | ------------ | --------------- |
+| Fueler     | `fueler`     | `fueler123`     |
+| Accountant | `accountant` | `accountant123` |
