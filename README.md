@@ -2,6 +2,17 @@
 
 Web application for tracking diesel fuel: fuel tanks (barrels), fuel receipts, fuelings, diesel sales, per-car monthly limits and an accounting report.
 
+🚀 **Live Demo:** [https://fuel-control-zv30.onrender.com](https://fuel-control-zv30.onrender.com)
+
+## Test Accounts
+
+Use the following credentials to log in and test the application:
+
+| Role | Username | Password | Quick Login |
+| :--- | :--- | :--- | :--- |
+| **Fueler** | `fueler` | `fueler123` | [Sign in as Fueler](https://fuel-control-zv30.onrender.com) |
+| **Accountant** | `accountant` | `accountant123` | [Sign in as Accountant](https://fuel-control-zv30.onrender.com) |
+
 > **Note:** fuelings (`fuel_events` table) are inserted into the database by an external third-party script. This project reads, edits, deactivates and reports on them, but does not create them.
 
 ## Main features
@@ -16,7 +27,7 @@ Web application for tracking diesel fuel: fuel tanks (barrels), fuel receipts, f
 
 ## Tech stack
 
-- **Client:** React 18, Create React App, Redux Toolkit, React Router 7, Chakra UI 3, axios, react-datepicker, react-to-print
+- **Client:** React 18, Redux Toolkit, React Router, Chakra UI, axios, react-datepicker, react-to-print
 - **Server:** Node.js (ESM), Express, mysql2, JSON Web Tokens, bcryptjs
 - **Database:** MySQL-compatible (TiDB Cloud), connected over TLS
 
@@ -78,12 +89,3 @@ npm start
 cd client
 npm run build            # production build into client/build
 ```
-
-## Test Accounts
-
-Use the following credentials to log in and test the application:
-
-| Role       | Username     | Password        |
-| ---------- | ------------ | --------------- |
-| Fueler     | `fueler`     | `fueler123`     |
-| Accountant | `accountant` | `accountant123` |
